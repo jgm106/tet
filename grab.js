@@ -1,6 +1,6 @@
 API.on(API.CHAT, callback);
 function callback(data) {
-  if (data.message.indexOf(',') === 0) {
+  if (data.message.indexOf('.') === 0) {
     var msg = data.message;
     var fromID = data.fromID;
     var myID = API.getUser().id;
