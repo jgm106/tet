@@ -2,6 +2,8 @@ var Countrybot = {};
 Countrybot.misc = {};
 Countrybot.misc.version = "1.0.22";
 
+API.sendChat('bAAnjoBOT Grab Script, take 1');
+
 API.on(API.CHAT, function(data){
   if(data.message.indexOf(',') === 0){
     var msg = data.message, from = data.from, fromID = data.fromID;
