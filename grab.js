@@ -40,6 +40,10 @@ function callback(data) {
       case "grabhelp":
         API.sendChat("[.grab or .grab 0 or .grab 1] puts song in first playlist. [.grab #] puts song in playlist number #.");
         break;
+
+      case "grabdebug":
+        API.sendChat("fromID: " + fromID + "  myID: " + myID);
+        break;
     }
   }
 }
