@@ -1,11 +1,5 @@
-
-API.on(API.USER_JOIN, UserJoin);
-function UserJoin(user)
-{
 API.sendChat("Welcome to The Country Club @"+ user.username +"!");
-}
 
-/*
 API.on(API.CHAT, function(data){
   API.sendChat('bAAnjoBOT Grab Script, take 1');
 });
@@ -38,6 +32,3 @@ API.on(API.CHAT, function(data){
   }
 });
 
-
-API.sendChat('bAAnjoBOT Grab Script v'+ Countrybot.misc.version +' Reporting for duty!')
-*/
