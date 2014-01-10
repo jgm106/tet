@@ -1,10 +1,6 @@
-var Countrybot = {};
-Countrybot.misc = {};
-Countrybot.misc.version = "1.0.22";
-
-Array.prototype.remove=function(){var c,f=arguments,d=f.length,e;while(d&&this.length){c=f[--d];while((e=this.indexOf(c))!==-1){this.splice(e,1)}}return this}; 
-
+API.on(API.CHAT, function(data){
 API.sendChat('bAAnjoBOT Grab Script, take 1');
+});
 
 /*
 API.on(API.CHAT, function(data){
