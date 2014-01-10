@@ -13,7 +13,7 @@ function callback(data) {
       switch(command[0].toLowerCase()){
         case "grab":
           $(".icon-curate").click();
-          $($(".curate").children(".menu").children().children()[command[1]]).mousedown();
+          $($(".curate").children(".menu").children().children()[command[1]-1]).mousedown();
           break;
       }
     }
