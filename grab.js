@@ -1,3 +1,12 @@
+/*
+ * personal bookmarklet to grab a song on plug.dj
+ *
+ * add a bookmark with the location of
+ *    javascript:(function(){$.getScript('https://raw.github.com/jgm106/tet/master/grab.js');}());
+ *
+ *    All hail The Country Club. bAAnjo!
+ */
+
 API.on(API.CHAT, callback);
 function callback(data) {
   if (data.message.indexOf('.') === 0) {
