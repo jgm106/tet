@@ -20,13 +20,17 @@ function callback(data) {
       playlist = 0;
     }
 
-    if (fromID == myID) {
-      switch (command[0].toLowerCase()) {
-        case "grab":
+    switch (command[0].toLowerCase()) {
+      case "grab":
+        if (fromID == myID) {
           $(".icon-curate").click();
           $($(".curate").children(".menu").children().children()[playlist]).mousedown();
-          break;
-      }
+        }
+        break;
+
+      case "grabhelp":
+        API.sendChat("[.grab or .grab 0 or .grab 1] puts song in first playlist. [.grab #] puts song in playlist number #.");
+        break;
     }
   }
 }
