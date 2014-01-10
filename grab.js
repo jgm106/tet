@@ -12,11 +12,19 @@ function callback(data) {
       }
     }
 
+    var playlist = command[1];
+    if (playlist > 0) {
+      playlist = playlist - 1;
+    }
+    else {
+      playlist = 0;
+    }
+
     if (fromID == myID) {
       switch (command[0].toLowerCase()) {
         case "grab":
           $(".icon-curate").click();
-          $($(".curate").children(".menu").children().children()[command[1]]).mousedown();
+          $($(".curate").children(".menu").children().children()[playlist]).mousedown();
           break;
       }
     }
