@@ -1,8 +1,15 @@
-API.on(API.CHAT, function(data){
-API.sendChat('bAAnjoBOT Grab Script, take 1');
-});
+
+API.on(API.USER_JOIN, UserJoin);
+function UserJoin(user)
+{
+API.sendChat("Welcome to The Country Club @"+ user.username +"!");
+}
 
 /*
+API.on(API.CHAT, function(data){
+  API.sendChat('bAAnjoBOT Grab Script, take 1');
+});
+
 API.on(API.CHAT, function(data){
   if(data.message.indexOf(',') === 0){
     var msg = data.message, from = data.from, fromID = data.fromID;
